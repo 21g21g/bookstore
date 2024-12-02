@@ -24,7 +24,7 @@ GET	/books/favorite	Marks a book as a favorite
 🔧 Setup Instructions
 1. Clone the Repository
 
-git clone https://github.com/<your-username>/books-collection-api.git
+git clone git@github.com:21g21g/bookstore.git
 cd books-collection-api
 2. Install Dependencies
 Ensure you have Node.js installed, then run:
