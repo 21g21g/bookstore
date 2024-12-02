@@ -1,0 +1,11 @@
+const express=require("express")
+const {validateRequest}=require("../middleware/validationResult")
+const {validateBook}=require("../utils/bookValidator")
+const  {createBook,updateBook,getBooks,deleteBook,getFavourite}=require("../controllers/bookController")
+const router=express.Router()
+router.post("/",validateBook,validateRequest,createBook)
+router.put("/:id",updateBook)
+router.get("/",getBooks)
+router.delete("/:id",deleteBook)
+router.get("/fav",getFavourite)
+module.exports = router;
